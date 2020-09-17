@@ -7,6 +7,5 @@ int main()
     float d; 
     cout << "Введите значение диаметра: " << endl;
     cin >> d;
-    float L = d * p;
-    cout << "Значение площади: " << L << endl;
+    cout << "Значение площади: " << (d * p) << endl;
 }
