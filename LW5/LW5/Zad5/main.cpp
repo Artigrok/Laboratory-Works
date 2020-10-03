@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Ru");
 	double x1, x2, y1, y2, x3, y3, a, b, c, P, p;
 	cout << "¬ведите значение x1: ";
 	cin >> x1;
