@@ -5,6 +5,7 @@ int main()
 	setlocale(LC_ALL, "ru");
 	int i, S, N,p;
 	float A;
+	cout << "Введите A и N через пробел: ";
 	cin >> A >> N;
 	S = 0;
 	for (i = 0; i <= N; i++)
@@ -12,5 +13,5 @@ int main()
 		p=pow(A, i);
 		S += p;
 	}
-	cout << S;
+	cout << "Ответ: " << S;
 }

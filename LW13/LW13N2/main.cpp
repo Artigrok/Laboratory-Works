@@ -4,6 +4,7 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	int N;
+	cout << "Введите N: ";
 	cin >> N;
 	int i;
 	float S;
@@ -12,5 +13,5 @@ int main()
 	{
 		S = S * ( 1 + (i * 0.1) );
 	}
-	cout << S;
+	cout <<"Ответ: " << S;
 }

@@ -4,6 +4,7 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	int N, S;
+	cout << "Введите N: ";
 	cin >> N;
 	int i;
 	S = 0;
@@ -11,5 +12,5 @@ int main()
 	{
 		S+=2*i-1;
 	}
-	cout << S;
+	cout << "Ответ: " << S;
 }
