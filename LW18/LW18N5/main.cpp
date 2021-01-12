@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "ru");
-	int i, N, s;
+	int N, i, S;
 	cout << "Введите значение N: ";
 	cin >> N;
 	cout << "Введите значения элементов массива А:" << endl;
@@ -13,20 +13,15 @@ int main()
 		cout << "Значение A[" << i << "]: ";
 		cin >> A[i];
 	}
-	cout << "Введите значения элементов массива В:" << endl;
-	int* B = new int[N];
-	for (i = 0; i < N; i++)
+	i = 0;
+	while ( (i + 1 < N) and (A[i+1] < A[i] ) )
 	{
-		cout << "Значение B[" << i << "]: ";
-		cin >> B[i];
+		S = A[i+1];
+		A[i+1] = A[i];
+		A[i] = S;
+		i++;
 	}
+	cout << "Ответ: ";
 	for (i = 0; i < N; i++)
-	{
-		s = B[i];
-		B[i] = A[i];
-		A[i] = s;
-	}
-	for (i = 0; i < N; i++) cout << A[i];
-	cout << endl;
-	for (i = 0; i < N; i++) cout << B[i];
+		cout << A[i] << " ";
 }
